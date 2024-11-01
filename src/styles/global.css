@@ -1,0 +1,19 @@
+/* this GlobalStyles is used to set de global mise en forme ,  linked to typescript customized theme ./theme.ts */
+/*  https://styled-components.com/docs/api#createglobalstyle */
+:root {
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    background-color: #333;
+  }
+
+
+  
+  
+  /* Other global styles can be added here 
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+    */
+

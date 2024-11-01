@@ -1,0 +1,47 @@
+/* 01-11-2024 TLE : Header Styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 10px solid var(--violet-main);
+    align-items: center;
+    height: 30px;
+    box-shadow: 0 -2px 150px 30px var(--primary-color);
+     z-index: 1000;
+   /* border: 5px solid var(--violet-main); */
+
+  }
+
+.header-nav {
+    display: flex;
+  }
+
+.header-nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+  }
+
+
+
+/* Specific styles for tablets and larger screens */
+@media (min-width: 768px) {
+    header {
+      /* Styles to apply only on tablets and larger screens */
+      flex-direction: column;
+      padding: 20px;
+      /* border: 2px groove  var(--violet-light); */
+     /* border-color: var(--violet-light); */
+     
+
+    }
+  }
+
+/* header hidden on mobile */
+@media (max-width: 600px) {
+    header {
+      display: none;
+    }
+  }

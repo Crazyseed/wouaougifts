@@ -1,4 +1,3 @@
-//TLE -  Last update 02-11-202 this is the Appbar Component for the app header and footer.
 import "../styles/navbar.css";
 import CottageSharpIcon from "@mui/icons-material/CottageSharp";
 import NotificationsActiveSharpIcon from "@mui/icons-material/NotificationsActiveSharp";
@@ -6,9 +5,12 @@ import QueueSharpIcon from "@mui/icons-material/QueueSharp";
 import FiberNewSharpIcon from "@mui/icons-material/FiberNewSharp";
 import SwitchAccountSharpIcon from "@mui/icons-material/SwitchAccountSharp";
 
-export function Navbar() {
-    return (
-  
+interface NavbarProps {
+  handleOpen: () => void;
+}
+
+export function Navbar({ handleOpen }: NavbarProps) {
+  return (
     <nav className="navbar-nav">
       <ol className="navbar-nav-list">
         <li className="navbar-nav-item">
@@ -24,7 +26,7 @@ export function Navbar() {
         </li>
 
         <li className="navbar-nav-item">
-          <a href="/lists" className="navbar-nav-link">
+          <a href="#" className="navbar-nav-link" onClick={(e) => { e.preventDefault(); handleOpen(); }}>
             <QueueSharpIcon />
           </a>
         </li>
@@ -42,6 +44,7 @@ export function Navbar() {
         </li>
       </ol>
     </nav>
-  
   );
 }
+
+export default Navbar;

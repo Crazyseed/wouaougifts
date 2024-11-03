@@ -2,36 +2,29 @@
 
 header {
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    border: 10px solid var(--violet-main);
-    align-items: center;
-    height: 30px;
-    box-shadow: 0 -2px 150px 30px var(--primary-color);
-     z-index: 1000;
-   /* border: 5px solid var(--violet-main); */
+    box-shadow: 0 -2px 150px 40px var(--primary-color);
+    /* border: 10px solid rgb(91, 18, 94); */
 
   }
 
 .header-nav {
     display: flex;
+    justify-content: center;
+    width: 50%;
+    justify-content: center;
+   /* border: 5px solid red; */
   }
-
-.header-nav-list {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    
-  }
-
 
 
 /* Specific styles for tablets and larger screens */
 @media (min-width: 768px) {
     header {
       /* Styles to apply only on tablets and larger screens */
-      flex-direction: column;
-      padding: 20px;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
       /* border: 2px groove  var(--violet-light); */
      /* border-color: var(--violet-light); */
      

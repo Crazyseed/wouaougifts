@@ -1,9 +1,43 @@
-.header-root {
-  display: flex;
-  justify-content: center;
+/* version 1.0.0 TLE  LastModif - 02-11-2024 , Main App page  App.tsx direct linked  */
+/* root  global styles */
+
+.app-body-frame {
+  min-height: 100vh;
+  display: flex; /* Utilisez flex pour activer Flexbox */
+  flex-direction: column; /* Utilisez column pour empiler les éléments verticalement */
   align-items: center;
-  width: 80%;
-  
-  padding: 20px;
-  border: 10px solid var(--violet-main);
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box;
+  border: 10px #44d2ee solid; */
 }
+
+.app-head-frame {
+  display: flex; /* Utilisez flex pour activer Flexbox */
+  flex: 0 0 15%; /* 15% de la hauteur totale */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 2px solid rgb(19, 226, 216);
+  /* border: 10px solid rgb(202, 187, 45); */
+}
+
+.app-main-frame {
+  display: flex; /* Utilisez flex pour activer Flexbox */
+  flex: 1 0 70%; /* 70% de la hauteur totale */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 2px solid rgb(19, 226, 216);
+}
+
+.app-footer-frame {
+  display: flex; /* Utilisez flex pour activer Flexbox */
+  flex: 0 0 15%; /* 15% de la hauteur totale */
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: 0 -2px 150px 20px var(--primary-color);
+  z-index: 1000;
+  border: 2px solid rgb(19, 226, 216);
+}
+
